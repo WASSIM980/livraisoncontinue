@@ -13,10 +13,10 @@ pipeline {
   
   }
   
-  stage("Build")
+  stage('Build')
   {
   	steps {
-  		sh "ansibe-playbook ansible/build.yml -i ansible/inventory/host.yml "
+  		sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"
   		}}
   }
   }
